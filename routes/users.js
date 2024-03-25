@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 const bcryptjs = require("bcryptjs");
 const auth = require("../middleware/auth");
 const { check, validationResult } = require("express-validator");
-const jwtSecret=process.env.JWT_SECRET;
+const jwtSecret="tshrieseilseaesleacsraeitatbohkiernadm/onteventrytobreach";
 //Test GET Route
 // router.get("/", (req, res) => {
 //   res.send("User route");
