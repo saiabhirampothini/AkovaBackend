@@ -6,7 +6,7 @@ const auth = require("../middleware/auth");
 // const config = require("config");
 const { check, validationResult } = require("express-validator");
 const User = require("../models/User");
-const jwtSecret=process.env.JWT_SECRET;
+const jwtSecret="tshrieseilseaesleacsraeitatbohkiernadm/onteventrytobreach";
 //@Test route to fetch user data
 
 router.get("/", auth, async (req, res) => {
