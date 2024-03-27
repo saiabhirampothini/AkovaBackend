@@ -96,7 +96,7 @@ router.get("/profile", auth, async (req, res) => {
 
 //Protect Route
 router.get("/protectRoute", auth, async (req, res) => {
-  const user = await User.findById(req.user.id).select("-password").select("-_id").select("-date").select("-__v").select("email").select("name");
+  const user = await User.findById(req.user.id).select("-password").select("-_id").select("-date").select("-__v").select("-email").select("-name");
   if (user) return res.status(200).json(user);
   else return res.status(400).json({ msg: "Invalid Authorization" });
 });
